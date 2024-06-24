@@ -15,8 +15,8 @@ dotenv.config()
 const port = process.env.PORT;
 // Konfigurasi CORS
 const corsOptions = {
-    origin: process.env.KEY_ORIGIN || '*', // ganti dengan asal yang diizinkan
-    credentials: true,
+    origin: '*', 
+    credentials: false,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Origin,X-Requested-With,Content-Type,Accept,Authorization'
 };
