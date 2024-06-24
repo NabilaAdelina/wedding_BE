@@ -16,7 +16,7 @@ const port = process.env.PORT;
 // Konfigurasi CORS
 app.use(cors({
     credentials: true,
-    origin: process.env.KEY_ORIGIN
+    origin: '*'
 }));
 app.use(express.json())
 
